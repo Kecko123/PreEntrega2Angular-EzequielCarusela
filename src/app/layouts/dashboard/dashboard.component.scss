@@ -17,7 +17,10 @@
     color: #f4f1f1;
 }
 .mat-icon {
-    vertical-align: middle;
+    vertical-align: text-bottom;
+}
+.menuIcon{
+    vertical-align: top;
 }
 .backgroundSidebarButtons {
     background-color: rgba(0, 255, 255, 0.125);
@@ -30,4 +33,7 @@
 .dashboardStyle {
     height: 100vh;
     background-color: #272b2f;
+}
+.mdc-list-item:hover::before {
+    background-color: rgba(255, 255, 255, 0.8);
 }

@@ -9,6 +9,12 @@ import { UsersModule } from './pages/users/users.module';
 import { SharedModule } from '../../shared/shared.module';
 import { BigtextDirective } from '../../shared/bigtext.directive';
 import {MatListModule} from '@angular/material/list'
+import { RouterModule } from '@angular/router';
+import { UsersComponent } from './pages/users/users.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CoursesComponent } from './pages/courses/courses.component';
+import { AlumnsComponent } from './pages/alumns/alumns.component';
+import { InscriptionsComponent } from './pages/inscriptions/inscriptions.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,33 @@ import {MatListModule} from '@angular/material/list'
     MatIconModule,
     UsersModule,
     SharedModule,
-    MatListModule
+    MatListModule,
+    RouterModule.forChild([
+      {
+        path: 'users',
+        component: UsersComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: 'courses',
+        component: CoursesComponent
+      },
+      {
+        path: 'alumns',
+        component: AlumnsComponent
+      },
+      {
+        path: 'inscriptions',
+        component: InscriptionsComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'home'
+      },
+    ])
   ],
   exports: [
     DashboardComponent
