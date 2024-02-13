@@ -13,7 +13,6 @@ import { RouterModule } from '@angular/router';
 import { UsersComponent } from './pages/users/users.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CoursesComponent } from './pages/courses/courses.component';
-import { AlumnsComponent } from './pages/alumns/alumns.component';
 import { InscriptionsComponent } from './pages/inscriptions/inscriptions.component';
 
 @NgModule({
@@ -31,7 +30,7 @@ import { InscriptionsComponent } from './pages/inscriptions/inscriptions.compone
     MatListModule,
     RouterModule.forChild([
       {
-        path: 'users',
+        path: 'alumns',
         component: UsersComponent
       },
       {
@@ -41,10 +40,6 @@ import { InscriptionsComponent } from './pages/inscriptions/inscriptions.compone
       {
         path: 'courses',
         component: CoursesComponent
-      },
-      {
-        path: 'alumns',
-        component: AlumnsComponent
       },
       {
         path: 'inscriptions',

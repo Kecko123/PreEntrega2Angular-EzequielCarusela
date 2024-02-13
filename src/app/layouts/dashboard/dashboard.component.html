@@ -7,10 +7,6 @@
         <span class="blanco"><mat-icon>home</mat-icon> Inicio</span>
       </a>
 
-      <a routerLink="users" mat-list-item
-        ><span class="blanco"><mat-icon>person</mat-icon> Usuarios</span></a
-      >
-
       <a
         (click)="showFiller = !showFiller"
         class="sidebarAdminButton"
@@ -22,11 +18,11 @@
 
       @if (showFiller) {
       <mat-nav-list>
-        <a routerLink="courses" class="backgroundSidebarButtons" mat-list-item
-          ><span class="blanco"><mat-icon>school</mat-icon> Cursos</span></a
-        >
         <a routerLink="alumns" class="backgroundSidebarButtons" mat-list-item
           ><span class="blanco"><mat-icon>people</mat-icon> Alumnos</span></a
+        >
+        <a routerLink="courses" class="backgroundSidebarButtons" mat-list-item
+          ><span class="blanco"><mat-icon>school</mat-icon> Cursos</span></a
         >
         <a
           routerLink="inscriptions"
